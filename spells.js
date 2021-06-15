@@ -1,3 +1,4 @@
+import _ from "lodash";
 const spells = `Absorb Magic	Arcana	Utility	6	Occult Philosophy
 Abundance	Nature	Utility	7	Occult Philosophy
 Abundant Animals	Transformation	Utility	4	Occult Philosophy
@@ -1519,4 +1520,4 @@ const spellList = spells.split(/\r?\n/).map((spell) => {
     book: matchedItems[5],
   };
 });
-console.log(spellList);
+console.log(_.uniq(spellList));
